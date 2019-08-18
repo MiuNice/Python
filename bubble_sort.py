@@ -24,7 +24,7 @@ def bubble_sort(_list, reverse=False):
                     _list[j], _list[j + 1] = _list[j + 1], _list[j]
                     count += 1
         if count == 0:
-            return _list  # 最优情况 / _len() - 1 为有序列表
+            return _list  # 最优情况 / _len() - i - 1 为有序列表
 
     return _list
 
