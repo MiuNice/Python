@@ -12,7 +12,7 @@ def bubble_sort(_list, reverse=False):
     :return: 返回列表
     """
     _len = len(_list)
-    for i in range(_len):
+    for i in range(_len - 1):
         for j in range(_len - i - 1):
             if reverse:
                 if _list[j] < _list[j + 1]:
