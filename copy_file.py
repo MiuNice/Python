@@ -2,13 +2,17 @@
     copy_file.py    拷贝文件
 """
 
+import os
+
 
 class MyFileNotFoundError(Exception):
-    def __init__(self,file_path):
+    def __init__(self, file_path):
         super().__init__(self)
         self._file_path = file_path
+
     def __str__(self):
         return "找不到该路径: " + self._file_path
+
 
 def copy_file(file_path, new_file_name=None, new_file_path="./"):
     """
@@ -27,7 +31,7 @@ def copy_file(file_path, new_file_name=None, new_file_path="./"):
             else:
                 if new_file_path[-1] != "/":
                     new_file_path = new_file_path + "/" + new_file_name
-                else:          
+                else:
                     new_file_path += new_file_name
             print("拷贝地址:", new_file_path)
             with open(new_file_path, "wb") as nf:
@@ -39,3 +43,8 @@ def copy_file(file_path, new_file_name=None, new_file_path="./"):
     except FileNotFoundError as notfile:
         error = "".join(list(str(notfile))[38:-1])
         raise MyFileNotFoundError(error)
+
+
+if __name__ == "__main__":
+    this_file_path = os.path.abspath(__file__)
+    copy_file(this_file_path, "NewFile.txt")
