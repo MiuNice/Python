@@ -1,3 +1,6 @@
+"""
+    qiuck_sort.py   快速排序
+"""
 def qiuck_sort(_list):
     if len(_list) <= 1:
         return _list
