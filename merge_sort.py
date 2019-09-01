@@ -1,6 +1,3 @@
-import random
-
-
 def merge_sort(_list):
     if len(_list) <= 1:
         return _list
@@ -27,11 +24,6 @@ def merge_sort(_list):
 
 
 if __name__ == '__main__':
-    _l = []
-    for i in range(10000000):
-        _l.append(random.randint(1, 100000))
-    import time
-
-    st = time.time()
+    _l = [1,44,5,6,7,223,5,644,6,45,4]
     print(merge_sort(_l))
-    print(time.time() - st)
+    
