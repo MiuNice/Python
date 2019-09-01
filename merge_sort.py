@@ -1,3 +1,8 @@
+"""
+    merge_sort.py   归并排序
+"""
+
+
 def merge_sort(_list):
     if len(_list) <= 1:
         return _list
@@ -24,6 +29,6 @@ def merge_sort(_list):
 
 
 if __name__ == '__main__':
-    _l = [1,44,5,6,7,223,5,644,6,45,4]
+    _l = [1, 2, 3, 4, 222, 3, 4, 6, 99]
     print(merge_sort(_l))
     
