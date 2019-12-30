@@ -1,5 +1,5 @@
 """
-    ShellSort.py 希尔排序
+    ShellSort.py 希尔排序 - BUG只能对五个或五个以下长度 的列表做排序操作
 """
 
 def shell_sort(_list):
@@ -22,5 +22,5 @@ def shell_sort(_list):
 
 
 if __name__ == "__main__":
-    _list = [2, 30, 7, 9, 11]
+    _list = [2, 30, 7, 9, 11, 10, 12]
     print(shell_sort(_list))
