@@ -1,6 +1,5 @@
 """
-    selection_sort.py
-    选择排序 V0.1
+    SelectSort.py 选择排序
 """
 
 

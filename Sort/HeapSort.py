@@ -1,5 +1,5 @@
 """
-    heap_sort.py    堆排序
+    heap_sort.py 堆排序
 """
 
 

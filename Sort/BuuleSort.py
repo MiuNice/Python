@@ -1,6 +1,6 @@
 """
-    bubble_sort.py
-    冒泡排序 V0.1
+    bubble_sort.py 冒泡排序
+    比较相邻的两个元素
 """
 
 

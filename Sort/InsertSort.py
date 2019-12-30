@@ -1,5 +1,5 @@
 """
-    insert_sort 插入排序
+    InsertSort.py 插入排序
 """
 
 def insert_sort(_list):
