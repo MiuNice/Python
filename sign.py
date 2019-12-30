@@ -1,6 +1,5 @@
 """
     sign.py 符号保留
-    Python 实现 numPy.sign()
 """
 
 def sign(x):
