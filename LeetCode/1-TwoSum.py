@@ -32,6 +32,8 @@ def twoSum(nums : list, target: int) -> list:
         return []
     """
 
+    # 思路
+    # target - x 若存在，则返回，反之向字典中添加 当前的索引
     dict_nums = {}
     for i, v in enumerate(nums):
         if target - v in dict_nums:
