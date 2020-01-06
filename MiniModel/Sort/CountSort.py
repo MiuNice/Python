@@ -8,13 +8,16 @@
 
 def count_sort(_list):
     _max = _list[0]
-    for max in range(1, len(_list)):
-        if _list[max] > _max:
-            _max = _list[max]
-    sort_list = [0 for x in range(_max + 1)]
+    _min = _list[0]
+    for num in range(1, len(_list)):
+        if _list[num] > _max:
+            _max = _list[num]
+        if _list[num] < _min:
+            _min = _list[num]
+    sort_list = [0 for x in range(_max - _min + 1)]
     for i in _list:
-        sort_list[i] += 1
-    return [sort for sort in range(len(sort_list)) for j in range(sort_list[sort])]
+        sort_list[i - _min] += 1
+    return [sort + _min for sort in range(len(sort_list)) for j in range(sort_list[sort])]
 
 
 if __name__ == "__main__":
