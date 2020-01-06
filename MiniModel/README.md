@@ -9,4 +9,5 @@
 - MergeSort   [归并排序](https://github.com/wMiu/PythonMiniModule/blob/master/Sort/MergeSort.py)
 - HeapSort    --[堆排序](https://github.com/wMiu/PythonMiniModule/blob/master/Sort/HeapSort.py)
 - ShellSort   [希尔排序](https://github.com/wMiu/PythonMiniModule/blob/master/Sort/ShellSort.py)
+- CountSort   [计数排序](https://github.com/wMiu/Python/blob/master/MiniModel/Sort/CountSort.py)
 - MonkeySort  [猴子排序](https://github.com/wMiu/PythonMiniModule/blob/master/Sort/MonkeySort.py)
