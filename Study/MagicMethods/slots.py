@@ -5,8 +5,6 @@
 
 class Test:
     __slots__ = ("_name", "age")  # 只能绑定 tuple 中的属性(Attribute)
-    # __abc__: int
-    __abc__ = 1
 
     def __init__(self, name):
         self._name = name
@@ -23,7 +21,6 @@ if __name__ == '__main__':
     # Error : AttributeError: 'Test' object has no attribute 'score'
     t.age = 18
     print(t.age)
-    print(t.__abc__)
 
     print("- 分割 -")
 
