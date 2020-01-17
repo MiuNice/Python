@@ -18,11 +18,11 @@ class FrenchDeck:
     def __getitem__(self, item):
         return self._card[item]
 
-    def spades_high(self, card):
+    def __spades_high(self, card):
         return self.ranks.index(card.rank) * (len(self.suit_val) - 2) + self.suit_val[card.suit]
 
     def sort_french_deck(self, reverse=False):
-        return sorted(self, key=self.spades_high, reverse=reverse)
+        return sorted(self, key=self.__spades_high, reverse=reverse)
 
 
 if __name__ == '__main__':
@@ -32,6 +32,6 @@ if __name__ == '__main__':
     card = Card("joker", "big")
     print(FrenchDeck.ranks.index(card.rank))
 
-    print(deck.spades_high(card))
+    # print(deck.spades_high(card))  # 此方法更改为私有方法
 
     print(deck.sort_french_deck())
