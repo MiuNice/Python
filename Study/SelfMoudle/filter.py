@@ -6,8 +6,7 @@
 """
 
 re = filter(lambda x: x % 2 == 0, range(1, 11))
-for i in re:
-    print(i, end=" ")
+print(*re)
 
 # 比较 if
 r = []
