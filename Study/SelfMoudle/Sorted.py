@@ -13,6 +13,8 @@ print(sorted(_l, reverse=True))  # 降序
 
 _l2 = [(1, 5), (2, 4), (3, 3), (4, 2), (5, 1)]
 print(sorted(_l2, key=lambda item: item[-1]))  # key = function
+print(sorted(_l2, key=lambda item: item[-1], reverse=True))  # 降序
 
 # 利用Key 实现倒序
 print(sorted(_l, key=lambda item: -item))
+print(sorted(_l2, key=lambda item: -(item[-1])))
