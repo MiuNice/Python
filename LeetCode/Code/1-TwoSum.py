@@ -7,7 +7,8 @@
         return [0, 1]  // 因为 arry[0] + arry[1] = 9
 """
 
-def twoSum(nums : list, target: int) -> list:
+
+def twoSum(nums: list, target: int) -> list:
     """暴力破解法
 
         寻找所有可能性，直到相加得出结果为止。
@@ -40,7 +41,8 @@ def twoSum(nums : list, target: int) -> list:
             return [dict_nums[target - v], i]
         else:
             dict_nums[v] = i
-    return[]
+    return []
+
 
 if __name__ == "__main__":
     test = {"array": [3, 3], "target": 6}
